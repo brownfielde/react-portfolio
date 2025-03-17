@@ -1,48 +1,32 @@
 import Header from './components/Header';
 import Footer from './components/Footer';
-// import NavBar from './components/NavBar'
-import AboutPage from './components/AboutPage';
-import Contact from './components/Contact';
-import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
+import NavBar from './components/NavBar';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+
 
 function App() {
-  return (
-    <>
-    <Header />
-      <Card>
-        <Card.Img variant="top" src="holder.js/100px180" />
-        <Card.Title>
-          About Page
-        </Card.Title>
-        <Card.Body>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </Card.Text>
-          <Button variant="outline-about-page">
-              About Page </Button>
-        </Card.Body>
-      </Card>
-      <br />
-      <Card>
-        <Card.Img variant="bottom" src="holder.js/100px180" />
-        <Card.Title>
-          <Contact />
-        </Card.Title>
-        <Card.Body>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </Card.Text>
-        </Card.Body>
-        
-      </Card>
-      <Footer />
-    </>
-    
-  );
-}
+    return (
+      <>
+      <NavBar />
+      <Header />
+        <Navbar bg="dark" data-bs-theme="dark">
+          <Container>
+            <Navbar.Brand href="#home">Rashelle's Portfolio</Navbar.Brand>
+            <Nav className="me-auto">
+              <Nav.Link href="#about-page">About Page</Nav.Link>
+              <Nav.Link href="#contact">Contact</Nav.Link>
+              <Nav.Link href="#portfolio">Portfolio</Nav.Link>
+              <Nav.Link href="#resume">Resume</Nav.Link>
+            </Nav>
+          </Container>
+        </Navbar>
+        <br />
+        <Footer />
+      </>
+    );
+  }
 
 export default App;
 
