@@ -1,6 +1,6 @@
 import Card from 'react-bootstrap/Card';
 // import Header from './Header'; // Ensure this path is correct
-import Footer from './Footer'; 
+// import Footer from './Footer'; 
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
@@ -11,10 +11,10 @@ import '../styles/GlobalStyles.css';
 function AboutPage (){
     return (
         <>
-        <Card class="card">
-               {/* Replace with actual image URL */}
-                <Card.Title>About The Developer</Card.Title>
+        <div className="about">
+        <Card className="projectText">
                 <Card.Body>
+                   <Card.Title>About The Developer</Card.Title>
                     <Container>
                     <Row>
                     <Col xs={6} md={4}>
@@ -29,7 +29,8 @@ function AboutPage (){
             </Card.Body>
           </Card>
           <br />
-          <Footer />
+         
+          </div>
         </>
         
       );

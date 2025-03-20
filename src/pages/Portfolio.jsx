@@ -1,4 +1,5 @@
 import Projects from '../components/Projects';
+//import Footer from '../components/Footer';
 
 
 const Portfolio = () => {
@@ -6,34 +7,36 @@ const Portfolio = () => {
         {
             title: 'Project One',
             text: 'This webpage application features several different components that cover helpful tips and information pertaining to studying, acclimating to the classroom via zoom, test prep and more.',
-            image: 'src/assets/images/demo-1 copy.png',
+            image: 'src/assets/images/project1.png',
             deployedLink: 'https://brownfielde.github.io/team-project-1/',
             repoLink: 'https://github.com/brownfielde/team-project-1.git',
         },
         {
             title: 'README Generator',
-            image: 'src/assets/images/demo-1 copy.png',
-            deployedLink: 'https://brownfielde.github.io/team-project-1/',
-            repoLink: 'https://github.com/brownfielde/team-project-1.git',
+            text: 'A professional README generator.',
+            image: 'src/assets/images/readme-generator.png',
+            //deployedLink: 'https://brownfielde.github.io/team-project-1/',
+            repoLink: 'https://github.com/brownfielde/readme-generator',
         },
         {
-            title: 'Project One',
-            image: 'src/assets/images/demo-1 copy.png',
-            deployedLink: 'https://brownfielde.github.io/team-project-1/',
-            repoLink: 'https://github.com/brownfielde/team-project-1.git',
+            title: 'Employee Tracker Database',
+            text: 'A command-line application dedicated to managing a database of employees, managers, departments, roles and salaries. This application makes use of the inquirer package to accept user input and return a result based on data entered.',
+            image: 'src/assets/images/employee-tracker.png',
+            //deployedLink: 'https://brownfielde.github.io/team-project-1/',
+            repoLink: 'https://github.com/brownfielde/employee-tracker',
         },
-        {
-            title: 'Project One',
-            image: 'src/assets/images/demo-1 copy.png',
-            deployedLink: 'https://brownfielde.github.io/team-project-1/',
-            repoLink: 'https://github.com/brownfielde/team-project-1.git',
-        },
+        // {
+        //     title: 'Project One',
+        //     image: 'src/assets/images/demo-1 copy.png',
+        //     deployedLink: 'https://brownfielde.github.io/team-project-1/',
+        //     repoLink: 'https://github.com/brownfielde/team-project-1.git',
+        // },
     
     ];
 
     return (
         <div className="portfolio">
-            <h2> Rashelle's Projects</h2>
+            <h2></h2>
             {projects.map((projects,index) => (
                 <Projects 
                 key={index}
@@ -44,6 +47,7 @@ const Portfolio = () => {
                 repoLink={projects.repoLink}
                 />
             ))}
+          
         </div>
     );
 };
