@@ -1,4 +1,4 @@
-# employee-tracker
+# Portfolio Site using React + JavaScript
   ![Static Badge](https://img.shields.io/badge/license-MIT-blue.svg)
   ## Description
   This repository contains information about my first portfolio website. Here you can find important information about the back-end of the application, and how to replicate the process! 
