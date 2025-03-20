@@ -1,23 +1,24 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import '../styles/GlobalStyles.css';
+
+import { Link } from 'react-router-dom';
 
 function Navigation (){
   return (
     <>
-    <Navbar />
-      <Navbar bg="dark" data-bs-theme="dark">
+   <Navbar bg="light" data-bs-theme="light" class="navBar">
         <Container>
-          <Navbar.Brand href="#home">Rashelle's Portfolio</Navbar.Brand>
+          <Navbar.Brand href="/home">Rashelle's Portfolio</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#about-page">About Page</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
-            <Nav.Link href="#portfolio">Portfolio</Nav.Link>
-            <Nav.Link href="#resume">Resume</Nav.Link>
+          <Nav.Link as={Link} to="/about-page">About Page</Nav.Link>
+            <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+            <Nav.Link as={Link} to="/portfolio">Portfolio</Nav.Link>
+            <Nav.Link as={Link} to="/resume">Resume</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
-      <br />
     </>
   );
 }

@@ -1,8 +1,13 @@
+
+import '../styles/Header.css';
+
 function Header () {
     return (
         <header className="header">
-            <h1>Home</h1>
-    </header>
-    );
+            
+        </header>
+    )
+    //return <Image src="src/assets/images/bannerimage.jpg" fluid />;
 }
+
 export default Header; 
