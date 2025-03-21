@@ -18,7 +18,7 @@ function AboutPage (){
                     <Container>
                     <Row>
                     <Col xs={6} md={4}>
-                        <Image src="src/assets/images/Untitled.jpg" roundedCircle className="img-fluid" style={{ maxWidth: '100px', height: 'auto' }} />
+                        <Image src="/images/Untitled.jpg" roundedCircle className="img-fluid" style={{ maxWidth: '100px', height: 'auto' }} />
                      </Col>
                   </Row>
                   </Container>
