@@ -14,7 +14,7 @@
   - npm i to install dependency packages
   - npm start to run application 
   ## Screenshot 
-  [Link to deployed application](brownfieldsportfolio.netlify.app)
+  [Link to deployed application](https://brownfieldsportfolio.netlify.app/home)
   ![Webpage still-image](src/assets/images/portfolio-ss.png)
   ## Dependencies 
   - VS Code
