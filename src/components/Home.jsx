@@ -1,4 +1,4 @@
-import Button from 'react-bootstrap/Button';
+
 import Card from 'react-bootstrap/Card';
 import '../styles/GlobalStyles.css';
 
@@ -13,7 +13,6 @@ function Home () {
             Welcome to my portfolio site! 
           </Card.Text>
         </Card.Body>
-       {/* <Card.Footer className="text-muted">2 days ago</Card.Footer> */}
       </Card>
       </div>
     )
