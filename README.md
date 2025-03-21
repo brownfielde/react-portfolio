@@ -15,7 +15,7 @@
   - npm start to run application 
   ## Screenshot 
   [Link to deployed application](https://brownfieldsportfolio.netlify.app/home)
-  ![Webpage still-image](src/assets/images/portfolio-ss.png)
+  ![Webpage still-image](public/images/portfolio-ss.png)
   ## Dependencies 
   - VS Code
   - react-router-dom
